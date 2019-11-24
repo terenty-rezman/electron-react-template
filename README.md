@@ -3,7 +3,7 @@ yet another
 # electron react template based on webpack
 not the best but simple & minimalist setup featuring:
 * __hot reloads thanks to webpack-dev-server__
-* __ node api access from electron renderers __(which some of templates out there lack)
+* __node api access from electron renderers__(which some of templates out there lack)
 * __vscode debug setups for main and renderer processes__ (.vscode > launch.json)
 
 ## usage
