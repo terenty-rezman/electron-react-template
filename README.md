@@ -1,5 +1,6 @@
 yet another
-##electron react template based on webpack
+
+# electron react template based on webpack
 not the best but simple & minimalist setup featuring:
 * __hot reloads thanks to webpack-dev-server__
 * __ node api access from electron renderers __(which some of templates out there lack)
