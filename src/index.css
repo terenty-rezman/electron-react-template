@@ -1,0 +1,28 @@
+html, body {
+    background: #282C34;
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#root {
+    height: 100%;
+}
+
+h1 {
+    color: #FF2360;
+}
+
+h3 {
+    color: #07D3AC;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
