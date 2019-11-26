@@ -26,7 +26,7 @@ function createWindow() {
     mainWindow = null;
   });
 
-  if (process.env.NODE_ENV === 'production')
+  if (process.env.WEBPACK_MODE === 'production')
     mainWindow.loadFile('./build/index.html');
   else {
     mainWindow.loadURL('http://localhost:3111');

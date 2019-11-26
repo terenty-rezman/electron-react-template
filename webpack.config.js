@@ -1,10 +1,12 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 // config created following a very nice guide from https://fullstackopen.com/en/part7/webpack
 
 // build configuration for electron main file
 const config_electron_main = (env, argv) => {
+  const mode = argv.mode;
   return {
     target: 'electron-main', // for files that should be compiled for electron main process
     entry: ['./src/electron.js'],
@@ -13,6 +15,13 @@ const config_electron_main = (env, argv) => {
       path: __dirname + '/build'
     },
     devtool: 'source-map',
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          'WEBPACK_MODE': JSON.stringify(mode)
+        }
+      })
+    ]
   }
 }
 
